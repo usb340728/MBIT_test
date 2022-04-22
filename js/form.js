@@ -17,7 +17,7 @@ $(function(){
     let divs = $(this).parent().prev().children();
     let inputs = divs.find('input:checked'); //체크된 input 찾기
     if(inputs.length < 1){
-      alert('문항이 선택되지 않았습니다.1');
+      alert('문항이 선택되지 않았습니다.');
       return false;
     }
     e.preventDefault()
@@ -32,7 +32,7 @@ $(function(){
   $('#form').submit(function(){
     let radios = $('input[type=radio]:checked');
     if(radios.length < 3){
-      alert("문항이 선택되지 않았습니다.2");
+      alert("문항이 선택되지 않았습니다.");
       return false;
     }
     return true;
